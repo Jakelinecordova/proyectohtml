@@ -1,0 +1,196 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   margin: 0; 
+   padding: 0;
+}
+/* HEADER AND NAV */
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  padding: 0 80px 0 80px;
+  width: 90%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+} 
+ul {
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+li{
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}  
+ul ul{ 
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+box-shadow: 0 2px 2px rgba(0,0,0, 0.1);
+} 
+li:hover>ul {display: inherit;
+}
+a{ text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #ff556e;
+}
+.submenu {
+  white-space: nowrap;
+  /* Evita que los elementos del submenú se ajusten automáticamente */
+}
+
+.submenu li {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  /* Línea de separación (color gris claro) */
+  padding-bottom: 5px;
+  /* Espaciado opcional entre los elementos y la línea de separación */
+  margin-bottom: 5px;
+  /* Espaciado opcional entre los elementos y la línea de separación */
+}
+/* BUTTON DOWNLOAD */
+.button-download {
+  cursor: pointer;
+  border: 2px solid #FF556E;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #FF556E;
+  padding: 10px 40px 10px 40px;
+  font-size: 13px;
+  box-shadow: none;
+ 
+}
+.button-download:hover {
+  /* Cambia el color de fondo al pasar el ratón */
+  background-color: #FF556E;
+  color: white;
+}
+/* MAIN */
+.main {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  margin-top: 120px;
+  text-align: center;
+}
+section {
+  /* IMPORTANTE */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-size: 80px;
+}
+.decoration {
+  display: flex;
+  justify-content: space-between;
+}
+.decorative-green-diamond {
+  width: 20px;
+}
+
+.decorative-yellow-circle {
+  width: 20px;
+}
+/* BUTTON SECTION DOWNLOAD */
+.button-section {
+  cursor: pointer;
+  /* border: 2px solid  #FF556E; */
+  border-radius: 25px;
+  background-color: #FF556E;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+  /* Transición suave del color de fondo durante 0.3 segundos */
+}
+.button-section:hover {
+  background-color: white;
+  color: #FF556E;
+  border: 2px solid #FF556E;
+  /* Cambia el color de fondo al pasar el ratón */
+}
+.dowload-iphone{
+  width: 100%;
+  transform: scaleX(-1);
+  margin-top: 60px;
+}
+/* FOOTER */
+.items-pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.items-pie>div {
+  text-align: center;
+  /* Alinea el contenido al centro */
+  margin: 0 10px;
+  /* Añade un margen entre los elementos */
+}
+.items-pie img {
+  width: 100px;
+  height: 100px;
+}
+.items-pie p {
+  margin-top: 5px;
+}
+.people-fill,
+.code-slash,
+.gear,
+.chat,
+.rocket-takeoff-fill {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+.people-fill {
+  background-color: #EBE7FA;
+}
+.code-slash {
+  background-color: #DAF4EF;
+}
+
+.gear {
+  background-color: #F8E5EA;
+}
+
+.chat {
+  background-color: #F8F1DE;
+}
+
+.rocket-takeoff-fill {
+  background-color: #E1F2FA;
+}
+.items-pie>div>p {
+  font-weight: bold;
+}
